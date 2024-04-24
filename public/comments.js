@@ -19,7 +19,7 @@ async function submit(event)
             localStorage.setItem("username", username);  // Store username in localStorage
             socket.send(JSON.stringify({ username: localStorage.getItem("username")}));
             console.log("The form is submitted successfully."); 
-            //alert("The form is submitted successfully.");
+            alert("The form is submitted successfully.");
         }
         else
         {
