@@ -6,11 +6,11 @@ const { peerProxy } = require("./peerProxy.js");
 const cookieParser = require("cookie-parser");
 const db = require("./db.js"); // call db file
 app.use(express.static("public"));
+app.set("trust proxy", true); // for websokect
 const port = process.argv.length > 2 ? process.argv[2] : 4001;
 const upload = multer({});
 // use express to use json() to make the response and required body as json
 app.use(express.json());
-app.set("trust proxy", true); // for websokect
 app.use(cookieParser()); // to process cookie 
 const authCookieName = "token"; // set the cookieheader as token? 
 
