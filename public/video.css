@@ -1,0 +1,70 @@
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+.site-header {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.site-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between navigation items */
+}
+
+.site-nav a {
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #a8dadc; /* Lighter shade when hovered or focused */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* 水平居中所有视频 */
+    align-items: center; /* 垂直居中所有视频 */
+    flex-wrap: wrap; /* 允许内容换行 */
+    gap: 20px; /* 视频之间的间隙 */
+    min-height: 100vh; /* 容器最小高度为视口的100% */
+  }
+  
+  .video-container iframe,
+  .video-container .responsive-video {
+    flex: 0 0 auto; /* 不允许伸缩，固定大小 */
+  }
+  
+  .responsive-video {
+    position: relative;
+    width: 560px; /* 将宽度设置为与其他视频一样的宽度 */
+  }
+  
+  .responsive-video iframe {
+    top: 0;
+    left: 0;
+    width: 560px; /* 限制iframe的宽度 */
+    height: 315px; /* 限制iframe的高度 */
+  }

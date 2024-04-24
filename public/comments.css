@@ -1,0 +1,115 @@
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+.site-header {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.site-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between navigation items */
+}
+
+.site-nav a {
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #a8dadc; /* Lighter shade when hovered or focused */
+}
+
+form
+{
+    color: black;
+    text-align: center;
+}
+
+main
+{
+    margin-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    background-size: auto;
+}
+
+label
+{
+    color:black;
+}
+
+.comment
+{
+    justify-content: center;
+    display: flex;
+
+}
+
+.web_socket
+{
+    color: black;
+}
+
+#quote
+{
+    text-align: center;
+    color: black;
+    margin: 25px auto;
+}
+
+
+h2
+{
+    color: black;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.footer {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 20px; /* Adjust padding to match the header */
+  }
+  
+  .footer-content {
+    background: rgba(0, 0, 0, 0.5); /* Matching the semi-transparent background of the header */
+    padding: 20px; /* Match the padding of the header content */
+  }
+
+  #quote
+{
+    text-align: center;
+    color: black;
+    margin: 25px auto;
+}
+
+ body
+ {
+    font-family: "Acme", sans-serif;
+ }

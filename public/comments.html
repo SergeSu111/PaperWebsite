@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comments.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Riot&display=swap');
+        </style>
+        
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Introduction2</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home Page🔍</a></li>
+                    <li><a href="report.html">Scientific Report🔍</a></li>
+                    <li><a href="application.html">Application🔍</a></li>
+                    <li><a  href="video.html">Video🔍</a></li>
+                    <li><a href="comments.html">Comments🔍</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <div class = "web_socket"></div>
+            <h2>Leave your comments</h2>
+            <form action="/submit_form", method = "post">
+                <div class = "subform">
+                    <label for="name">Name:</label>
+                <input type="text" id = "name" name = "name" placeholder="Enter your name" required>
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id = "email" name = "email" placeholder="Enter your email" required>
+                <br>
+
+                <div class = "comment">
+                    <label for="comments">Comment:</label>
+                    <textarea name="comments" id="comments" cols="17" rows="5" placeholder="Enter your comments" required></textarea>
+                </div>
+                <br>
+                </div>
+                <button type="submit" class = "myButton">Submit</button>
+            </form>
+    </main>
+    <footer>
+        <div id = "quote"></div>
+    </footer>
+</body>
+<script src = "comments.js"></script>
+</html>

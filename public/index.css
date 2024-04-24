@@ -1,0 +1,77 @@
+
+
+header
+{
+   
+    padding: 10px;
+    text-align: center;
+}
+
+main
+{
+
+    max-width: 800px;
+    margin: auto;
+}
+
+aside, section, footer {
+    margin-bottom: 20px;
+}
+
+aside {
+    padding: 10px;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color:black;
+}
+aside li {
+    margin-bottom: 5px;
+}
+
+#report
+{
+
+    padding:1px;
+    text-align: center;
+}
+
+#application
+{
+    padding:1px;
+    text-align: center;
+}
+
+#comments
+{
+
+    padding:1px;
+    text-align: center;
+}
+
+body {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('images/background.png');
+    background-size: cover; /* 这将确保图片覆盖整个页面 */
+    background-position: center; /* 图片将以页面中心为中点显示 */
+    background-repeat: no-repeat; /* 这将防止图片重复 */
+    background-attachment: fixed; /* 图片固定，不随滚动条滚动 */
+  }
+
+  html
+  {
+    font-size: 125%;
+  }
+
+
+  
