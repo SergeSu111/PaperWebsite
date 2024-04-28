@@ -42,12 +42,44 @@ a{
 .site-nav a:focus {
     color: #a8dadc; /* Lighter shade when hovered or focused */
 }
-h2
-{
-    text-align: center;
+
+
+.app-section {
+    display: flex;
 }
 
-p
+.text-content h2
 {
-    text-indent: 2em;
+    text-align: center;
+    font-size: 45px;
 }
+.text-content p{
+    flex: 1; /* takes up 50% of the flex container */
+    padding: 20px;
+    /* Additional styles as required */
+    font-size: 42px;
+    font-style: italic;
+    text-align: 2em;
+    
+}
+
+.img-content {
+    flex: 1; /* takes up 50% of the flex container */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.img-content img {
+    
+   
+    width: 50vw; /* half of the viewport width */
+        
+       
+    height: auto; /* maintain the aspect ratio */
+        
+       
+    object-fit: contain; /* ensure the whole image is visible */
+
+    padding: 1em;
+    }

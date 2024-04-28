@@ -29,21 +29,17 @@
             <div class = "web_socket"></div>
             <h2>Leave your comments</h2>
             <form action="/submit_form", method = "post">
-                <div class = "subform">
+                <div class = "form-row">
                     <label for="name">Name:</label>
-                <input type="text" id = "name" name = "name" placeholder="Enter your name" required>
-
-                <br>
-
-                <label for="email">Email:</label>
-                <input type="email" id = "email" name = "email" placeholder="Enter your email" required>
-                <br>
-
-                <div class = "comment">
+                    <input type="text" id = "name" name = "name" placeholder="Enter your name" required>
+                </div>
+                <div class = "form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id = "email" name = "email" placeholder="Enter your email" required>
+                </div>
+                <div class = "form-row">
                     <label for="comments">Comment:</label>
                     <textarea name="comments" id="comments" cols="17" rows="5" placeholder="Enter your comments" required></textarea>
-                </div>
-                <br>
                 </div>
                 <button type="submit" class = "myButton">Submit</button>
             </form>
