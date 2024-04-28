@@ -3,6 +3,7 @@ body, h1, ul, li, a {
     padding: 0;
     list-style: none;
     text-decoration: none !important;
+    font-family: Arial, sans-serif; /* Choose a default font for the entire page */
 }
 
 a{
@@ -43,33 +44,29 @@ a{
     color: #a8dadc; /* Lighter shade when hovered or focused */
 }
 
-p
-{
-    text-indent: 2em;
-    font-size: larger;
+.introduction-content {
+    display: flex;
+    align-items: flex-start; /* Align the start of the items at their top edge */
 }
 
-#p-div
-{
-    margin: 40px;
+.text-content {
+    flex: 3; /* Take up 3 times the space of the image-content */
+    padding: 20px;
+    margin-right: 20px; /* Separate the text from the images */
+    background: #f9f9f9; /* Light grey background for the text */
 }
 
-html, body {
-    height: 100%; /* 让html和body的高度等于视口高度 */
-    margin: 0; /* 去掉默认的margin */
+.image-content {
+    flex: 1; /* Take less space than the text content */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the images in this column */
+    gap: 20px; /* Create space between the images */
 }
 
-
-#imgContainer
-{
-        display: flex;
-        justify-content: center; /* 水平居中 */
-        align-items: center; /* 垂直居中 */
-        height: 300px; /* 设置容器的高度 */
-        
-}
-
-#last_page
-{
-    margin-right: 10px;
+.image-content img {
+    width: 100%; /* Make the images take the full width of their container */
+    max-width: 200px; /* Don't let images become too large */
+    height: auto; /* Keep the aspect ratio of the images */
 }
