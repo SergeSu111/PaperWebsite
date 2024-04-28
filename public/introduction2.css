@@ -44,29 +44,51 @@ a{
     color: #a8dadc; /* Lighter shade when hovered or focused */
 }
 
-.introduction-content {
-    display: flex;
-    align-items: flex-start; /* Align the start of the items at their top edge */
+.main-container {
+    /* This container needs to clear its children's floats */
+    overflow: auto;
+    width:100%;
+    min-height:40vh;
+    max-height: 75vh;
 }
+
+.image-aside {
+    float: right;
+    width:50vw;
+    padding-bottom:3em;
+    margin: 0.5em;
+    /* border: black solid thin; */
+    /* Add width if necessary, otherwise it will be as wide as its content */
+}
+
+.image-aside img {
+    width: 100%; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    object-fit: contain; /* Scales the image to fit the dimensions, maintaining the aspect ratio */
+    /* margin-bottom: 1em;  */
+    display: block;
+    /* float:right; */
+    padding: 1em;
+}
+
+/* .secondImage
+{
+    width:30px;
+} */
 
 .text-content {
-    flex: 3; /* Take up 3 times the space of the image-content */
-    padding: 20px;
-    margin-right: 20px; /* Separate the text from the images */
-    background: #f9f9f9; /* Light grey background for the text */
+    /* If you have enough content, this may not be necessary, but it ensures the text does not wrap around the aside */
+    overflow: auto;
+    text-indent: 2em;
+    font-style: italic;
+    font-size:35px;
+    padding-top: 40px;
+    padding-left: 20px;
+    /* padding-right: 5px; */
+    margin-right: 50vw;
 }
 
-.image-content {
-    flex: 1; /* Take less space than the text content */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the images in this column */
-    gap: 20px; /* Create space between the images */
-}
-
-.image-content img {
-    width: 100%; /* Make the images take the full width of their container */
-    max-width: 200px; /* Don't let images become too large */
-    height: auto; /* Keep the aspect ratio of the images */
+#last_page
+{
+    margin-right: 1em;
 }

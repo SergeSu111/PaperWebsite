@@ -43,23 +43,30 @@ a{
     color: #a8dadc; /* Lighter shade when hovered or focused */
 }
 
-main
-{
-    height: 800px;
-}
-
-#container
-{
+.report-section {
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
-}
-
-p
-{
-    text-indent: 2em;
-    /* font-size: larger; */
-}
-
-section
-{
     border: 1px solid black;
+}
+
+.text-content {
+    flex: 1; /* takes 50% width */
+    padding: 20px;
+    text-indent: 2em;
+}
+
+.image-link-content {
+    flex: 1; /* takes 50% width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically centers content in the flex container */
+    align-items: center; /* horizontally centers content in the flex container */
+}
+
+.image-link-content img {
+    max-width: 100%; /* ensures image does not overflow its container */
+    height: auto; /* maintains aspect ratio */
+    margin-bottom: 10px; /* space between image and button */
 }
